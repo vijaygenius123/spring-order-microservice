@@ -1,0 +1,11 @@
+
+
+### Create Order
+POST http://localhost:8081/order/create
+Content-Type: application/json
+
+{
+  "name": "iPhone X",
+  "quantity" : 1,
+  "price" : 100
+}
