@@ -1,6 +1,9 @@
 package com.vijaygenius123.learning.microservice.order.controllers;
 
 
+import com.vijaygenius123.learning.microservice.order.common.Payment;
+import com.vijaygenius123.learning.microservice.order.common.TransactionRequest;
+import com.vijaygenius123.learning.microservice.order.common.TransactionResponse;
 import com.vijaygenius123.learning.microservice.order.models.Order;
 import com.vijaygenius123.learning.microservice.order.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +21,9 @@ public class OrderController {
 
 
     @PostMapping("/create")
-    public Order createOrder(@RequestBody Order order){
-        return orderService.saveOrder(order);
+    public TransactionResponse createOrder(@RequestBody TransactionRequest request){
+
+        return null;
     }
 
 }
